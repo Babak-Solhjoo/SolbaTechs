@@ -348,7 +348,8 @@ p { margin: 0 0 1em; }
     align-items: stretch;
     gap: 4px;
     padding: 16px 24px 24px;
-    background: rgba(11, 11, 20, 0.97);
+    background: var(--bg-alt);
+    box-shadow: var(--shadow);
     border-bottom: 1px solid var(--border);
     transform: translateY(-8px);
     opacity: 0;
