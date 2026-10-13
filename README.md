@@ -8,6 +8,7 @@ web apps and data/ML processing solutions.
 | Product        | Type              | Platforms     |
 | -------------- | ----------------- | ------------- |
 | TankFight      | Game              | Web, Mobile   |
+| Gamexels       | Games platform    | Web, Mobile   |
 | TastingPlanet  | App               | Web, Mobile   |
 | RoleKiln       | App               | Web, Mobile   |
 | AcomoProperty  | App               | Web, Mobile   |
