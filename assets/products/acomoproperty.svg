@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AcomoProperty">
+	<rect width="512" height="512" fill="#173e35"/>
+	<!-- Original house artwork stays inside the central maskable safe circle (radius 204.8). -->
+	<path d="M132 240 256 132 380 240V360H292V280H220V360H132Z" fill="#e9f0d7"/>
+</svg>
