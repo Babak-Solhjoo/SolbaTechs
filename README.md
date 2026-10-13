@@ -3,16 +3,6 @@
 Official website for **SolbaTechs** — a software studio building games, mobile apps,
 web apps and data/ML processing solutions.
 
-## Products
-
-| Product        | Type              | Platforms     |
-| -------------- | ----------------- | ------------- |
-| TankFight      | Game              | Web, Mobile   |
-| Gamexels       | Games platform    | Web, Mobile   |
-| TastingPlanet  | App               | Web, Mobile   |
-| RoleKiln       | App               | Web, Mobile   |
-| AcomoProperty  | App               | Web, Mobile   |
-
 ## Tech
 
 Plain static site — HTML, CSS and vanilla JavaScript. No build step.
