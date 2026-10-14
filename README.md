@@ -32,8 +32,8 @@ Deploy the committed `main` with:
 ```
 
 It uploads only `index.html`, `css/`, `js/` and `assets/` to `/var/www/solbatechs`.
-Server config lives in [`deploy/Caddyfile`](deploy/Caddyfile); once `solbatechs.com` points at
-the server, swap `:80` for the domain there and Caddy turns on HTTPS automatically.
+Live at **https://solbatechs.com** (DNS on Cloudflare, `www` and the bare IP redirect there).
+Server config lives in [`deploy/Caddyfile`](deploy/Caddyfile); Caddy handles HTTPS certificates automatically.
 
 ---
 

@@ -1,12 +1,16 @@
 # Caddy config for the SolbaTechs website (/etc/caddy/Caddyfile).
-# Once solbatechs.com points at this server, replace ":80" with
-# "solbatechs.com, www.solbatechs.com" and Caddy will enable HTTPS automatically.
-:80 {
+# Caddy obtains and renews HTTPS certificates for the domains automatically.
+{
+	email sales@solbatechs.com
+}
+
+solbatechs.com {
 	root * /var/www/solbatechs
 	file_server
 	encode zstd gzip
 
 	header {
+		Strict-Transport-Security "max-age=31536000"
 		X-Content-Type-Options nosniff
 		Referrer-Policy strict-origin-when-cross-origin
 		X-Frame-Options DENY
@@ -19,4 +23,13 @@
 	handle_errors {
 		redir * / 302
 	}
+}
+
+# www and the bare server IP both send visitors to the main domain.
+www.solbatechs.com {
+	redir https://solbatechs.com{uri} permanent
+}
+
+http://46.225.76.29 {
+	redir https://solbatechs.com{uri} permanent
 }
