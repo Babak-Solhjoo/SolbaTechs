@@ -24,8 +24,16 @@ python -m http.server 8080
 
 ## Deploying
 
-The site is fully static, so it can be hosted on GitHub Pages
-(Settings → Pages → Deploy from branch → `main` / root), Netlify, Vercel, etc.
+The site runs on a Hetzner CX23 server (Nuremberg) behind [Caddy](https://caddyserver.com/).
+Deploy the committed `main` with:
+
+```bash
+./deploy.sh
+```
+
+It uploads only `index.html`, `css/`, `js/` and `assets/` to `/var/www/solbatechs`.
+Server config lives in [`deploy/Caddyfile`](deploy/Caddyfile); once `solbatechs.com` points at
+the server, swap `:80` for the domain there and Caddy turns on HTTPS automatically.
 
 ---
 
